@@ -1,13 +1,50 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>FirstApp</title>
+  <title>Portfolio</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn-tailwindcss.vercel.app/?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+
+        extend: {
+
+          colors: {
+            dark: '#040b14',
+            headingColor:'#173b6c',
+          },
+
+          backgroundImage: {
+              homebanner: `url('./assets/home.jpeg')`,
+            },
+
+
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    
+    body {
+      @apply text-gray-900;
+    }
+    .btn{
+    @apply bg-blue-500 text-gray-50 px-3 py-2;
+
+};
+
+  </style>
 </head>
+<canvas class="background"></canvas>
 <body>
   <app-root></app-root>
+
 </body>
+
 </html>

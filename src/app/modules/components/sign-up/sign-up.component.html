@@ -1,0 +1,49 @@
+<div class="min-h-screen flex items-center justify-center" style="background-image: url('../../../../assets/sea.jpg');">
+    <div class="max-w-screen-sm mx-auto flex-shrink-0 w-full">
+        <div class="cover bg-gray-100 p-4">
+            <div class="flex items-center justify-center">
+                <img src="../../../../assets/signup.png" class="w-32">
+            </div>
+            <h2 class="mb-4 text-center text-2xl">Sign Up</h2>
+
+
+            <form [formGroup]="signUpForm">
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="w-100 rounded-md">
+                        <input type="email" formControlName="email" class="rounded-md p-2 w-full border ring-0 focus:outline-primary"
+                            placeholder="Email">
+                    </div>
+
+                    <div class="w-100">
+                        <input type="text" formControlName="passsword" class="rounded-md p-2 w-full border" placeholder="Passsword">
+                    </div>
+
+                    <div class="w-100">
+                        <input type="text" formControlName="firstName" class="rounded-md p-2 w-full border" placeholder="First Name">
+                    </div>
+
+                    <div class="w-100">
+                        <input type="text" formControlName="lastName" class="rounded-md p-2 w-full border" placeholder="Last Name">
+                    </div>
+
+                    <div class="w-100">
+                        <input type="text" formControlName="school" class="rounded-md p-2 w-full border" placeholder="School">
+                    </div>
+
+                    <div class="w-100">
+                        <input type="text" formControlName="rollNo" class="rounded-md p-2 w-full border" placeholder="Roll No">
+                    </div>
+
+                    <button type="button" class="col-span-2 py-2 bg-blue-300" (click)="submit()" [disabled]="!signUpForm.valid">Submit</button>
+                    <!-- <label>Already Registered <sapn>Sign In</sapn></label> -->
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</div>

@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100&display=swap');
+
+body{
+    /* font-family: 'Noto Kufi Arabic'; */
+}
+
+html, body {
+  
+    margin
+    : 0;
+      
+    padding
+    : 0;
+    }
+    .background {
+      
+    position
+    :
+     absolute
+    ;
+      
+    display
+    :
+     block
+    ;
+      
+    top
+    : 0;
+      
+    left
+    : 0;
+      
+    z-index
+    : 0;
+    }
